@@ -1,0 +1,71 @@
+/*
+Уведомление внизу экрана
+ */
+.alert-notification {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 102px;
+    box-shadow: 0 -12px 30px rgba(196, 196, 196, 0.7);
+    border-radius: 20px 20px 0 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+    color: #000;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 0 2em;
+    z-index: 10;
+}
+
+.alert-notification .logo {
+    margin-right: 1em;
+    width: 59px;
+    height: 42px;
+    -webkit-mask-image: url("../logo.svg");
+    mask-image: url("../logo.svg");
+    mask-repeat: no-repeat;
+    background-color: #3C77FF;
+    min-width: 59px;
+}
+
+.alert-notification a:link,
+.alert-notification a:visited,
+.alert-notification a:active {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+.alert-notification a:hover {
+    text-decoration: none;
+}
+
+
+.notif_text {
+    width: auto;
+}
+
+.notification-success .logo {
+    background-color: #3C77FF;
+}
+
+.notification-error {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.15)), #FFFFFFz;
+    box-shadow: 0 -12px 30px rgba(255, 0, 0, 0.15);
+}
+.notification-error .logo {
+    background-color: #FF6666;
+}
+
+.notification-warning {
+    background: linear-gradient(0deg, rgba(255, 191, 27, 0.15), rgba(255, 191, 27, 0.15)), #FFFFFF;
+    box-shadow: 0 -12px 30px rgba(255, 191, 27, 0.15);
+}
+.notification-warning .logo {
+    background-color: #FFBF1B;
+}
